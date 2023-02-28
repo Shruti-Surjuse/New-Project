@@ -1,0 +1,1132 @@
+@font-face {
+    font-family: "futural" ;
+    src: url(./FuturaLTW05-LightCondensed.ttf);
+}
+@font-face {
+    font-family:"guardian-egypt";
+    src: url(./Guardian-EgypTT-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100vw;
+
+    
+}
+body::-webkit-scrollbar{
+display: none;
+}
+
+.fs::-webkit-scrollbar{
+    display: none;
+    }
+
+.shruti{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: blue; */
+}
+
+.fs{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-color:gery;
+    overflow: hidden;
+    
+   
+}
+.cube{
+    height:50%;
+    width: 50%;
+    background-color: black;
+    background-size: cover;
+    position: absolute;
+
+   
+}
+ #outer{
+    position: absolute;
+    /* background-color: #000; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* flex-direction: row; */
+    
+}
+#outer p{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* transition:0.5s; */
+    position:absolute;
+}
+
+
+.ot{
+    position: relative;
+    /* overflow: hidden; */
+    top:40%;
+    /* width:calc(100/4); */
+    object-fit: calc(100/4);
+    opacity:0.2;
+
+}
+
+
+  .imggg{
+    position: absolute;
+    /* transform: rotate(180deg); */
+    margin-left: -20%;
+    opacity: 0.5;
+
+  }
+  #le{
+    margin-left: 800px;
+  }
+
+  #lef{
+    margin-left: 600px;
+  }
+  #left{
+    margin-left: 400px;
+  }
+
+  #left-1{
+    margin-left: 100px;
+    opacity: 0.7;
+  }
+  #left-2{
+    margin-left: 200px;
+    opacity: 0.7;
+  }
+  #left-3{
+    margin-left: 350px;
+    opacity: 0.7;
+  }
+
+  .imggg-1{
+    position: absolute;
+    rotate:(-180deg);
+    left: 50%;
+
+  }
+  
+.cube img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+} 
+
+
+.arrow-1{
+    width:7rem;
+    height: 7rem;
+}
+.nav{
+    position: relative;
+    /* position: fixed; */
+/* z-index: 9999; */
+    height:44px;
+    width: 400px;
+    background-color: rgba(230, 221, 208, 0.818);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 33%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    width: 350px;
+}
+.nav ul li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height:20px;
+    z-index: 1;
+    margin-left: 10px;
+
+}
+.nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.nav ul li a .icon{
+    position: relative;
+    display:flex;
+    line-height:70px;
+    font-size: 1.6rem;
+    transition: 0.5s ease ;
+    
+}
+.nav ul li:hover a .icon{
+    transform: translateY(-32px);
+}
+.nav ul li a .text{
+    position: absolute;
+    font-weight:50;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+
+}
+.nav ul li:hover a .text{
+    opacity: 1;
+    transform: translateY(3px);
+
+}
+.indi{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color:rgba(128, 82, 82, 0.875);
+    top: -60%;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+.indi::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22.5px;
+    width: 20px;
+    height: 20px;
+    background:transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 0 0 white;
+
+}
+.indi::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22.5px;
+    width: 20px;
+    height: 20px;
+    background:transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 white;
+
+}
+
+.nav ul li:nth-child(1):hover ~ .indi{
+    transform: translateX(calc(70px*0));
+}
+
+.nav ul li:nth-child(2):hover ~ .indi{
+    transform: translateX(calc(70px*1));
+}
+.nav ul li:nth-child(3):hover ~ .indi{
+    transform: translateX(calc(70px*2));
+}
+.nav ul li:nth-child(4):hover ~ .indi{
+    transform: translateX(calc(70px*3));
+}
+.nav ul li:nth-child(5):hover ~ .indi{
+    transform: translateX(calc(70px*4));
+}
+
+
+
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5rem;
+    font-weight: 900;
+}
+.center h1{
+    color: black;
+    position: relative;
+    display: inline-block;
+    
+}
+ .arrow{
+    height:7.7rem;
+    width:7.7rem;
+}
+#peacock{
+    position: absolute;
+    top: 70%;
+    right:40%;
+    height:6rem;
+    width:6rem;
+
+}
+#bag{
+    position: absolute;
+    top: 70%;
+    right:20%;
+}
+
+#bear{
+    position: absolute;
+    top: 80%;
+   left:15%;
+   height:4rem;
+   width:4rem;
+}
+
+#vina{
+    position: absolute;
+    top: 30%;
+   left:50%;
+   height:6.9rem;
+   width:6.9rem;
+}
+
+
+#lo{
+    position: absolute;
+    top: 60%;
+    height:8.5rem;
+    width:8.5rem;
+    right:33%;
+}
+ #bott{
+     position: absolute;
+    top: 25%;
+    left:30%;
+    height:5rem;
+    width:5rem;
+    z-index: 99; 
+} 
+#hat{
+    position: absolute;
+    top: 25%;
+    right:33%;
+}
+#book{
+    position: absolute;
+    top:40%;
+    right:18%;
+    z-index: 99;
+    height: 10rem;
+    width: 10rem;
+}
+#yel{
+    position: absolute;
+    top: 20%;
+    left:33%;
+    height: 3rem;
+    width: 3rem;
+}
+#gre{
+    position: absolute;
+    top: 34%;
+    right:17%;
+    height: 4rem;
+    width: 4rem;
+}
+#cir{
+    position: absolute;
+    top: 30%;
+    right:60%;
+    transform: rotate(45deg);
+    height: 5rem;
+    width: 5rem;
+}
+#ele{
+    position: absolute;
+    top: 35%;
+    left:20%;
+    height: 8rem;
+    width: 8rem;
+
+    transform: rotate(20deg);
+}
+
+#gift{
+    position: absolute;
+    top: 65%;
+    left:17%;
+    height: 4.5rem;
+    width: 4.5rem;
+
+    transform: rotate(20deg);
+}
+
+#art{
+    position: absolute;
+    top: 50%;
+    right:45%;
+    opacity:0.5;
+    height: 25rem;
+    width: 25rem;
+} 
+.slogan{
+    margin-top: 30px;
+    margin-left:40%;
+    font-size: 0.9rem;
+    font-weight:500;
+    
+}
+/* Code of yashvani */
+.cust-start {
+    height: 100vh;
+    /* background-color: blue; */
+    overflow: hidden;
+}
+
+.cust-container {
+    width: 30vw;
+    height: 67vh;
+    position: absolute;
+    margin-top: -12%;
+    /* top: 60vh; */
+    left: 80vw;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+    /* background-color: blueviolet; */
+}
+
+.cust-box {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* transform: rotate(-90deg); */
+    transform-style: preserve-3d;
+    /* transform: rotateY(130deg); */
+    animation: animate 5s infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+
+    25% {
+        transform: rotateX(-45deg) rotateY(-45deg);
+    }
+
+    50% {
+        transform: rotateX(45deg) rotateY(45deg);
+    }
+
+    75% {
+        transform: rotateX(45deg) rotateY(45deg);
+    }
+
+    100% {
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+}
+
+.cust-card {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    padding: 100px 0;
+    background-color: steelblue;
+    border: 2px solid white;
+    box-sizing: border-box;
+    position: absolute;
+    font-style: 32px;
+    transition: all 1s;
+}
+.cardimg1{
+    background-image: url(https://m.media-amazon.com/images/I/71NYfI3qe0L._SL1500_.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardimg2{
+    background-image: url(https://www.appareltech.in/wp-content/uploads/Sublimation-Blank-Photo-Frames-600x600.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardimg3{
+    background-image: url(https://i.etsystatic.com/25918651/c/1140/906/0/199/il/7c1609/4165651716/il_340x270.4165651716_55hn.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardimg4{
+    background-image: url(https://cdn.igp.com/f_auto,q_auto,t_prodl/products/p-love-is-in-the-air-personalized-gift-tray-153072-m.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardimg5{
+    background-image: url(https://i.etsystatic.com/28114023/c/2634/2094/56/0/il/4c66f9/4273034896/il_500x500.4273034896_92sg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardimg6{
+    background-image: url(https://d3cif2hu95s88v.cloudfront.net/live-site-2016/2021/personalised/clock.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#front {
+    transform: translateZ(125px);
+}
+
+#back {
+    transform: translateZ(-125px);
+}
+
+#left {
+    right: 125px;
+    transform: rotateY(-90deg);
+}
+
+#right {
+    left: 125px;
+    transform: rotateY(90deg);
+}
+
+#top {
+    bottom: 125px;
+    transform: rotateX(90deg);
+}
+
+#bottom {
+    top: 125px;
+    transform: rotateX(-90deg);
+}
+
+input:focus~.cust-box #front {
+    transform: translateZ(180px) rotateY(360deg);
+}
+
+input:focus~.cust-box #back {
+    transform: translateZ(-180px) rotateY(360deg);
+}
+
+input:focus~.cust-box #left {
+    right: 180px;
+}
+
+input:focus~.cust-box #right {
+    left: 180px;
+}
+
+input:focus~.cust-box #top {
+    bottom: 180px;
+}
+
+input:focus~.cust-box #bottom {
+    top: 180px;
+}
+input{
+    padding: 10px;
+    position: absolute;
+    left: 40%;
+    bottom: -3%;
+    border-radius: 10px;
+    font-weight: 650;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    width: 100vw;
+    height: 120px;
+    /* background-color:gainsboro; */
+    background-color: rgb(248,235,230);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content: space-around; */
+
+}
+
+.part1 h1 {
+    background: -webkit-linear-gradient(#4d4141, #d50d0d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.part2 {
+    width: 25%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 90px;
+}
+
+.part3 {
+    width: 25%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.part2-span {
+    background: -webkit-linear-gradient(#4d4141, #d50d0d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.cust-desc {
+    width: 800px;
+    height: 500px;
+    /* background:#ed2139a1; */
+    /* background-color: aliceblue; */
+
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.cust-desc .heading {
+    
+    width: 600px;
+    margin-left: 20px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    /* line-height: 50px; */
+    
+}
+.cust-desc p {
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 800; */
+    font-size: 25px;
+    padding-left: 50px;
+}
+.cust-cat{
+    width: 500px;
+    height: 150px;
+   margin-left: 50px;
+   margin-top: 40px;
+    /* background-color: #4d4141; */
+    display: flex;
+   flex-wrap: wrap;
+    gap: 15px;
+}
+.cat1,.cat2,.cat3,.cat4,.cat5{
+    width: 200px;
+    height: 40px;
+    background-color: aliceblue;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(94, 90, 90);
+    background-color:rgba(220, 220, 220, 0.416);
+}
+
+
+/* First page end */
+
+
+/* Second page Start*/
+.cust-cont2{
+    /* height: 100vh; */
+    /* background-color:cornsilk; */
+    border-top: 2px dotted brown;
+}
+h1{
+    text-align: center;
+    padding: 50px 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.circle{
+    width: 96vw;
+    height: 160px;
+    /* background-color: blueviolet; */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+}
+h4{
+    text-align: center;
+    width: 70px;
+    margin-top: 50px;
+    margin-left: 35px;
+    /* font-family: 'Mynerve', cursive; */
+    font-family: "guardian-egypt";
+
+    text-transform: capitalize;
+}
+.c1{
+    width: 150px;
+    height: 150px;
+    /* background-color: cadetblue; */
+    /* background-color: lightgray; */
+    background-color: rgb(248,235,230);
+    border-radius: 100px;
+    border: 1px solid black;
+}
+.var{
+    height: 700px;
+    /* background-color: blue; */
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.var1{
+    width: 250px;
+    height:250px;
+    background-color: aliceblue;
+   margin-top: 60px;
+   margin-left: 70px;
+   border-radius: 20px;
+   background: url(https://www.giftsmyntra.com/wp-content/uploads/2023/02/moon-light.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.inn{
+    width: 250px;
+    height: 250px;
+    background-color:#fff;
+    border-radius: 20px;
+    /* color:seagreen; */
+    color: #616a61;
+    border: 1px solid black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    opacity: 0;
+}
+
+.inn span{
+    margin-left: 85px;
+    font-size: 15px;
+    color: #445a6a;
+    border: 2px solid #445a6a ;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+.inn:hover{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.var2{
+    width: 250px;
+    height:250px;
+    background:url(https://cdn.shopify.com/s/files/1/0534/8566/6462/products/PersonalisedInfinityheartlightwithname_Giftingstudio_2.jpg?v=1647435285&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+.var3{
+    width: 250px;
+    height:250px;
+    background:url(https://cdn.shopify.com/s/files/1/0556/7479/8245/products/thumb18_a7c279c3-6ad0-4bf8-bad2-35621ad85560_600x.jpg?v=1643339614);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+.var4{
+    width: 250px;
+    height:250px;
+   background:url(https://sc04.alicdn.com/kf/H79c6cf2b76c448658c1b8ab594b957e9O.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+.var5{
+    width: 250px;
+    height:250px;
+   background:url(https://i.ebayimg.com/images/g/BKoAAOSwVRdjf2IX/s-l500.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+.var6{
+    width: 250px;
+    height:250px;
+   background:url(https://m.media-amazon.com/images/I/61d4s1XVjpL._SL1280_.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   margin-left: 70px;
+   border-radius: 20px;
+
+}
+.var7{
+    width: 250px;
+    height:250px;
+   background:url(https://i.etsystatic.com/12096010/c/1339/1060/79/262/il/5743e0/2052105598/il_500x500.2052105598_ni6c.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.var8{
+    width: 250px;
+    height:250px;
+   background:url(https://imgmedia.lbb.in/media/2020/07/5efd8af28c822655f761125c_1593674482169.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.var9{
+    width: 250px;
+    height:250px;
+   background:url(https://i0.wp.com/raisingteenstoday.com/wp-content/uploads/2018/01/Valentines-20.jpg?fit=1200%2C1798&ssl=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.var10{
+    width: 250px;
+    height:250px;
+    background:url(http://cdn.shopify.com/s/files/1/0450/6504/4133/products/spotify_1material_20220331XHD083ycd001.jpg?v=1648712578);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+/* Second page END*/
+#page3{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: aqua; */
+}
+#anu-nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(248,235,230);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+#anu-nav>h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+
+#Scroll-anu{
+    position: relative;
+    top: 2%;
+    display: flex;
+    height: 25vw;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 2vw 1vw;
+    gap: 30px;
+}
+#Scroll-anu::-webkit-scrollbar{
+    display: none;
+}
+.slide{
+    position: relative;
+    overflow: hidden;
+    width: 40vw;
+    height: 100%;
+    flex-shrink: 0;
+    /* background-color: rgb(56, 15, 15); */
+    display: flex;
+}
+.one{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    background-size: cover
+}
+#img1{
+    background-image: url(https://cdn.shopify.com/s/files/1/2442/9463/products/FREDDIE_1500x1500.jpg?v=1676634617);
+}
+#img1:hover{
+    background-image: url(https://cdn.shopify.com/s/files/1/2442/9463/products/FREDDIE1_1500x1500.jpg?v=1676634617);
+    transition: 1s;
+}
+#img2{
+    background-image: url(https://cdn.shopify.com/s/files/1/2442/9463/products/fridakahlo_1500x1500.jpg?v=1628246501);
+}
+#img2:hover{
+    background-image: url(https://cdn.shopify.com/s/files/1/2442/9463/products/19x24.25cm-2022-03-03T122201.836_1500x1500.png?v=1646290335);
+    transition: 1s;
+}
+#img3{
+    background-image: url(https://i.etsystatic.com/29773467/r/il/ae7cbf/4421742686/il_794xN.4421742686_oq40.jpg);
+}
+#img3:hover{
+    background-image: url(https://i.etsystatic.com/29773467/r/il/14dfb2/4469099415/il_794xN.4469099415_75i7.jpg);
+    transition: 1s;
+}
+#img4{
+    background-image: url(https://i.etsystatic.com/40540839/r/il/6ddd55/4544863486/il_794xN.4544863486_16kg.jpg);
+}
+#img4:hover{
+    background-image: url(https://i.etsystatic.com/40540839/r/il/f4964a/4592177051/il_794xN.4592177051_1742.jpg);
+    transition: 1s;
+}
+#img5{
+    background-image: url(https://i.etsystatic.com/36953647/r/il/5368a4/4536721208/il_794xN.4536721208_hv9v.jpg);
+}
+#img5:hover{
+    background-image: url(https://i.etsystatic.com/36953647/r/il/011894/4451562454/il_794xN.4451562454_9idp.jpg);
+    transition: 1s;
+}
+#img6{
+    background-image: url(https://i.etsystatic.com/37507221/r/il/04b641/4575733348/il_794xN.4575733348_npgn.jpg);
+}
+#img6:hover{
+    background-image: url(https://i.etsystatic.com/37507221/r/il/97b626/4575734208/il_794xN.4575734208_5m8l.jpg);
+    transition: 1s;
+}
+#img7{
+    background-image: url(https://i.etsystatic.com/26290046/r/il/3aa01e/4626452541/il_794xN.4626452541_ehi6.jpg);
+}
+#img7:hover{
+    background-image: url(https://i.etsystatic.com/26290046/r/il/9eb5dd/4626452551/il_794xN.4626452551_fk83.jpg);
+    transition: 1s;
+}
+#img8{
+    background-image: url(https://i.etsystatic.com/40841547/r/il/7d8d7e/4695563483/il_794xN.4695563483_88ik.jpg);
+}
+#img8:hover{
+    background-image: url(https://i.etsystatic.com/40841547/r/il/fe5f29/4695564445/il_794xN.4695564445_m3pr.jpg);
+    transition: 1s;
+}
+#img9{
+    background-image: url(https://i.etsystatic.com/26465086/r/il/17cd6f/4430698303/il_794xN.4430698303_gstu.jpg);
+}
+#img9:hover{
+    background-image: url(https://i.etsystatic.com/26465086/r/il/b3eaa5/4430698341/il_794xN.4430698341_3ggu.jpg);
+    transition: 1s;
+}
+#img10{
+    background-image: url(https://i.etsystatic.com/31395415/r/il/e16ba5/4383563224/il_794xN.4383563224_zspr.jpg);
+}
+#img10:hover{
+    background-image: url(https://i.etsystatic.com/31395415/r/il/00d5f5/4383562864/il_794xN.4383562864_befe.jpg);
+    transition: 1s;
+}
+#img11{
+    background-image: url(https://i.etsystatic.com/27154897/r/il/94cee3/3198647083/il_794xN.3198647083_l2sr.jpg);
+}
+#img11:hover{
+    background-image: url(https://i.etsystatic.com/27154897/r/il/a5477a/4024372362/il_794xN.4024372362_mif1.jpg);
+    transition: 1s;
+}
+#img12{
+    background-image: url(https://i.etsystatic.com/33260427/r/il/5f6788/4078830993/il_794xN.4078830993_se87.jpg);
+}
+#img12:hover{
+    background-image: url(https://i.etsystatic.com/33260427/r/il/99a8d5/4031180932/il_794xN.4031180932_l55p.jpg);
+    transition: 1s;
+}
+#img13{
+    background-image: url(https://i.etsystatic.com/23373303/r/il/95bf10/2718105890/il_794xN.2718105890_lh60.jpg);
+}
+#img13:hover{
+    background-image: url(https://i.etsystatic.com/23373303/r/il/9bb423/2766039189/il_794xN.2766039189_ayxd.jpg);
+    transition: 1s;
+}
+#img14{
+    background-image: url(https://cdn.shopify.com/s/files/1/2442/9463/products/DSCF9710copy_1500x1500.jpg?v=1657090975);
+}
+#img14:hover{
+    background-image: url(https://cdn.shopify.com/s/files/1/2442/9463/products/giftimage_0c9fc5cc-e883-4e63-b21c-8de5b797c28a_1500x1500.jpg?v=1657110346);
+    transition: 1s;
+}
+.two{
+    position: relative;
+    width: 50%;
+    height: 100%    ;
+    background-color: #FCF8ED;
+}
+.two>i{
+    position: absolute;
+    font-size: 25px;
+    border: 2px solid #000;
+    right: 5%;
+    padding: 4px;
+    top: 5%;
+    opacity: 0;
+    color: #fff;
+    background-color: #000;
+}
+.two:hover i{
+    opacity: 1;
+    transition: 2s;
+}
+.two:hover{
+    box-shadow: 1px 1px 5px 10px #c1b5b5 inset;
+    transition: 1s;
+}
+.two>h1{
+    color: #bc5d76;
+    /* font-family:"futural" ;     */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.two>h6{
+    text-align: center !important; 
+    letter-spacing: 1px;
+    opacity: 0.6;
+    margin-top: 0px;
+    font-size: 15px;
+    font-family: "guardian-egypt";
+}
+.two>h5{
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+#page4{
+    position: relative;
+    /* width: 100vh; */
+    margin-top: 90px;
+    display: flex;
+}
+.swiper {
+    width: 300px;
+    height: 500px;
+    /* background-color: azure; */
+    position: absolute;
+    left: 0%;
+    top: 200%;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+.swiper-slide>h3{
+    /* font-family:"futural" ;     */
+    font-family: 'Poppins', sans-serif;
+    /* letter-spacing: 1px; */
+    text-align: center;
+    margin-top: 10px;
+    color: #bc855d;
+}
+.swiper-slide>h6{
+    /* background-color: #000; */
+    font-family:"futural" ;    
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 10px;
+    color: #7b5942;
+    font-size: 14px;
+}
+
+#anu-nav2{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(248,235,230);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#anu-nav2>h1{
+    /* font-family: "guardian-egypt"; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+
+#part2{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    gap: 350px;
+    padding: 20px 30px;
+}
+#part2 #pt1>h2{
+    /* font-family: "guardian-egypt"; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#part2 #pt1>h3{
+    margin-top: 5px;
+    /* font-family: "guardian-egypt"; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+#part2 #pt2>h2{
+    /* font-family: "guardian-egypt"; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#part2 #pt2>h3{
+    margin-top: 5px;
+    /* font-family: "guardian-egypt"; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+#part2 #pt3>h2{
+    /* font-family: "guardian-egypt"; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#part2 #pt3>h3{
+    /* text-align: center; */
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    /* font-family: "guardian-egypt"; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
